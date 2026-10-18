@@ -45,7 +45,7 @@ form.addEventListener("submit", function (e) {
   localStorage.setItem("userName", name);
   localStorage.setItem("userAge", age);
 
-  displayUserData(name, age);
+  displayUserInfo(name, age);
   form.reset();
 });
 clearBtn.addEventListener("click", function () {
@@ -57,7 +57,7 @@ window.addEventListener("DOMContentLoaded", function () {
   const savedAge = localStorage.getItem("userAge");
 
   if (savedName && savedAge) {
-    displayUserData(savedName, parseInt(savedAge));
+    displayUserInfo(savedName, parseInt(savedAge));
   }
   showQuotes();
 });

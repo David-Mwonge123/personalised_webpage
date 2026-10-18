@@ -37,3 +37,14 @@ function showQuotes() {
     quotes.appendChild(p);
   }
 }
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
+  const name = nameInput.value.trim();
+  const age = parseInt(ageInput.value);
+
+  localStorage.setItem("userName", name);
+  localStorage.setItem("userAge", age);
+
+  displayUserData(name, age);
+  form.reset();
+});

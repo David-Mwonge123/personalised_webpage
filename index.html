@@ -8,5 +8,12 @@
 <body>
     <h1>Welcome to My Personal Page</h1>
     <p>Tell us who you are and we'll personalize it for you!</p>
+
+    <form id="userForm">
+      <input type="text" id="nameInput" placeholder="Enter your name" required aria-required="true">
+      <input type="number" id="ageInput" placeholder="Enter your age" min="1" max="120" required aria-required="true">
+      <button type="submit">Save My Info</button>
+      <button type="button" id="clearBtn">Clear Data</button>
+    </form>
 </body>
 </html>

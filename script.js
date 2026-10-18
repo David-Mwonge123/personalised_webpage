@@ -5,7 +5,7 @@ const greetingSection = document.getElementById("greetingSection");
 const greeting = document.getElementById("greeting");
 const ageInMonths = document.getElementById("ageInMonths");
 const adultMessage = document.getElementById("adultMessage");
-const quotesEl = document.getElementById("quotes");
+const quotes = document.getElementById("quotes");
 const clearBtn = document.getElementById("clearBtn");
 
 function calculateAgeInMonths(age) {
@@ -26,5 +26,14 @@ function displayUserInfo(name, age) {
     adultMessage.textContent =
       "You are too young for adult content. Come back when you turn 18!";
     adultMessage.style.color = "red";
+  }
+}
+function showQuotes() {
+  const quote = "Believe in yourself - Every expert was once a beginner!";
+  quotes.innerHTML = "";
+  for (let i = 1; i <= 5; i++) {
+    const p = document.createElement("p");
+    p.textContent = `${i}. ${quote}`;
+    quotes.appendChild(p);
   }
 }

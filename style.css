@@ -60,3 +60,9 @@ button:hover {
 #clearBtn:hover {
   background: #8a1f04;
 }
+.card {
+  background: #ddd;
+  padding: 20px;
+  border-radius: 15px;
+  margin-top: 15px;
+}

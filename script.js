@@ -7,3 +7,7 @@ const ageInMonths = document.getElementById('ageInMonths');
 const adultMessage = document.getElementById('adultMessage');
 const quotesEl = document.getElementById('quotes');
 const clearBtn = document.getElementById('clearBtn');
+
+function calculateAgeInMonths(age) {
+  return age * 12;
+}

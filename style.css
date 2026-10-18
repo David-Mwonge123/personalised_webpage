@@ -51,3 +51,12 @@ button {
   font-size: 16px;
   cursor: pointer;
 }
+button:hover {
+  background: #1e35ab;
+}
+#clearBtn {
+  background: red;
+}
+#clearBtn:hover {
+  background: #8a1f04;
+}

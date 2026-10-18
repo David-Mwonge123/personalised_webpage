@@ -29,7 +29,7 @@ function displayUserInfo(name, age) {
   }
 }
 function showQuotes() {
-  const quote = "Believe in yourself - Every expert was once a beginner!";
+  const quote = "Keep Going! - You are closer than you think!";
   quotes.innerHTML = "";
   for (let i = 1; i <= 5; i++) {
     const p = document.createElement("p");
@@ -48,7 +48,16 @@ form.addEventListener("submit", function (e) {
   displayUserData(name, age);
   form.reset();
 });
-clearBtn.addEventListener('click', function() {
+clearBtn.addEventListener("click", function () {
   localStorage.clear();
   location.reload();
+});
+window.addEventListener("DOMContentLoaded", function () {
+  const savedName = localStorage.getItem("userName");
+  const savedAge = localStorage.getItem("userAge");
+
+  if (savedName && savedAge) {
+    displayUserData(savedName, parseInt(savedAge));
+  }
+  showQuotes();
 });

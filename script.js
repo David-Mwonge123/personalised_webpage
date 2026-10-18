@@ -48,3 +48,7 @@ form.addEventListener("submit", function (e) {
   displayUserData(name, age);
   form.reset();
 });
+clearBtn.addEventListener('click', function() {
+  localStorage.clear();
+  location.reload();
+});

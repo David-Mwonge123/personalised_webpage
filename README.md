@@ -24,3 +24,9 @@ A simple webpage that saves your name & age in localStorage, shows a personalize
 - Template literals
 - Function for age in months
 - Loop for quotes
+
+### Desktop Responsive
+![Desktop View](images/desktop.png)
+
+### Mobile Responsive
+![Mobile View](images/Mobile.png)
